@@ -39,9 +39,40 @@
           <img src="images/icon-dexs.png" alt="Dexscreener" class="link-icon">
           DEXSCREENER
         </a>
+        <button class="link meme-gallery-btn" id="memeGalleryBtn">
+          <img src="images/icon-meme.png" alt="Meme Gallery" class="link-icon">
+          MEME GALLERY
+        </button>
       </div>
     </div>
   </main>
+
+  <!-- Meme Gallery Modal -->
+  <div class="modal-overlay" id="memeModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>MEME GALLERY</h2>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="gallery-container">
+        <div class="meme-grid" id="memeGrid">
+          <!-- Memes will be loaded here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Meme Viewer Modal -->
+  <div class="modal-overlay" id="memeViewerModal">
+    <div class="meme-viewer-content">
+      <div class="meme-viewer-header">
+        <button class="close-viewer">&times;</button>
+      </div>
+      <div class="meme-viewer-body">
+        <img id="fullMemeImage" alt="Full Meme">
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
